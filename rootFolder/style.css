@@ -1,0 +1,499 @@
+ /*
+ Deafult Style for all browsers
+
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/* ------------- Above are default styles: -------------*/
+/* ------------- Below are our own styles: -------------*/
+
+* {
+    text-decoration: none;
+}
+
+/* ----------------------- HEADER ----------------------- */
+header {
+    background-color: black;
+    width:110%;
+    height:260px;
+}
+
+/* --- Logo + Team name ---*/
+header .img-logo {
+    width: 350px;
+    height: 200px;
+    display: block;
+    padding: 30px 70px; /* move logo up and down */
+}
+
+header .team-name {
+    font-family: 'Bebas Neue', cursive; /*Lesson 10: 外站下载的额外字体*/
+    color:white;
+    font-size: 80px;
+    background-color: black;
+    text-align:center;
+    word-spacing: 10px;
+    padding: 50px 0; /* up-down left-right */
+}
+
+.wrapper-logo{  /* Combine logo and team-name together */
+    display: flex;  
+}
+/* --- END: Logo + Team name ---*/
+
+
+header nav ul {
+    display: block;
+    margin: 30px auto; /* height between list and logo*/
+    width: fit-content;
+}
+
+header nav ul li {
+    display: inline-block;
+    float: left;
+    list-style: none;
+    padding: 0 40px; /* distance between each list */
+}
+
+header nav ul li a {
+    font-family: Times, 'Times New Roman', serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+    display: block;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+/* ----------------------- INDEX ----------------------- */
+
+/* Product Picture */
+.index-banner {
+    width: auto;
+    height: 750px; /* distance between navigation and this image */
+    background-image: url(img/locker11.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+/* Product Slogan */
+.index-banner h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 55px;
+    font-weight: 10;
+    color: black;
+    text-align: left;
+    padding: 230px 60px; /*  top-bottom, left-right*/
+    /* text-shadow: 2px 2px 8px black; */ 
+    line-height: 60px;
+}
+/* Login-Signup icon area */
+.index-links {
+    overflow: hidden;
+}
+.index-links div {
+    margin: 10px 16px 16px 30px; /* top right bottom left */
+    width: 45%;
+    height: 200px;
+    background-color: black;
+    float: left;
+}
+
+/* Login-Signup words */
+.index-links div h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 60px;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    padding: 65px 100px; /*  top-bottom, left-right*/
+}
+
+/* Meet the team*/.
+.meet-team {
+    padding: 110px 100px; /*  top-bottom, left-right*/
+    height: 600px;
+}
+
+.meet-team-title div{
+    margin: 0px 16px 16px 30px; /* top right bottom left */
+    width: 100%;
+    height: 200px; /* distance between title and photos */
+    float: left;
+}
+.meet-team-title h4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 60px;
+    font-weight: 100;
+    text-align: center;
+    padding: 120px; /*  move the title up or down*/
+}
+
+.meet-team-photo{
+    width: 100%;
+    overflow: hidden;
+}
+.meet-team-photo div {
+    margin: 0px 16px 16px 30px; /* top right bottom left */
+    width: 16%; /* distance between photos*/
+    height: 280px;  /* distance between photos and next section */
+    float: left;
+    padding: 21px; /*  overall length of photos at x-axis*/
+}
+
+
+
+/* ----------------------- FOOTER ----------------------- */
+footer {
+    width: 100%;
+    padding: 10px 40px; /* top-bottom, left-right of lists*/
+    background-color:black;
+    overflow: hidden;
+}
+
+
+footer ul {
+    width:fit-content;
+    float: left;
+    padding-left: 20px;
+}
+
+footer ul li {
+    display: block;
+    list-style: none;
+    padding: 0 65px; /*  distance between lists*/
+}
+
+footer ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+    line-height: 40px;
+}
+
+.footer-sm {
+    width: 180px;
+    float:inline-end;
+}
+.footer-sm img{
+    width: 100%;
+    padding: 0 380px; 
+}
+
+
+.footer-rights {
+    width: 900px;
+    font-size: 28px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    word-spacing: 1px;
+    letter-spacing: 5px;
+    padding: 25px 30px; /*  top-bottom, left-right*/
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* ----------- Adjust the size for desktop version ----------- */
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+@media only screen and (min-width: 1000px) {
+
+    header {
+        height:90px;
+    }
+
+
+/* --- Logo + Team name ---*/
+    header .img-logo {
+        width: 100px;
+        height: 50px;
+        padding: 20px 20px; /* move logo up and down */
+    }
+
+    header .team-name {
+        font-size: 20px;
+        text-align:center;
+        letter-spacing: 2px;
+        word-spacing: 1px;
+        padding: 25px 0; /* up-down left-right */
+    }
+
+    .wrapper-logo{  /* Combine logo and team-name together */
+        display: flex;  
+    }
+    /* --- END: Logo + Team name ---*/
+
+    header nav ul {
+        display: block;
+        margin: 10px 800px; /* height,width between list and logo*/
+        width: 600px;  /* left-right of lists*/
+    }
+    
+    header nav ul li {
+        display: inline-block;
+        float: left; 
+        list-style: none;
+        padding: 0 30px; /*  distance between each list*/
+    }
+    
+    header nav ul li a {
+        font-family: Times, 'Times New Roman', serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: black;
+        display: block;
+    }
+
+    /* ----------------------- INDEX ----------------------- */
+    .index-banner {
+        width: 100%;
+        height: 790px; /* distance between navigation and this image */
+        background-image: url(img/locker11.png);
+        background-repeat: no-repeat;
+        background-position-x: 300px;
+        background-size: 70%;
+    }
+    
+    .index-banner h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 40px;
+        font-weight: 500;
+        color: black;
+        text-align: left;
+        padding: 200px 400px; /*  top-bottom, left-right*/
+        line-height: 70px;
+        letter-spacing: 2px;
+        word-spacing: 8px;
+    }
+    
+    .index-links div {
+        margin: 0 16px 16px 340px; /* top right bottom left */
+        width: 20%;
+        height: 150px;
+        background-color: black;
+        float: left;
+    }
+    
+
+    
+    .index-links div h3 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 30px;
+        font-weight: 100;
+        color: white;
+        text-align: center;
+        padding: 58px 70px; /*  top-bottom, left-right*/
+    }
+
+    /* Meet the team*/.
+    .meet-team { 
+        padding: 110px 100px; 
+        height: 600px;
+    }
+
+    .meet-team-title div{
+        margin: 0px 16px 16px 30px; /* top right bottom left */
+        width: 100%;
+        height: 200px; /* distance between title and photos */
+        float: left;
+    }
+    .meet-team-title h4{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 60px;
+        font-weight: 100;
+        text-align: left;
+        padding: 120px 700px; /*  move the title up/down  left/right*/
+    }
+
+    .meet-team-photo{
+        width: 100%;
+        overflow: hidden;
+    }
+    .meet-team-photo div {
+        margin: 20px 200px; /* top right bottom left */
+        width: 0%; /* distance between photos*/
+        height: 280px;  /* distance between photos and next section */
+        float: left;
+        padding: 10px; /*  overall length of photos at x-axis*/
+    }
+
+    /* ----------------------- FOOTER ----------------------- */
+    footer {
+        width: calc(100%-80px);
+        padding: 10px 50px; /* top-bottom, left-right */
+        margin-top: 20px;
+        background-color: black;
+        overflow: hidden;
+    }
+    
+    footer ul {
+        width:fit-content;
+        float: left;
+        padding-left: 20px;
+        background-color: black;
+    }
+    
+    footer ul li {
+        display: block;
+        list-style:none;
+        padding: 0 200px; /* top-bottom, left-right */
+    }
+    
+    footer ul li a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color: white;
+        line-height: 40px;
+    }
+    
+    .footer-links-help {
+        display:block;
+    }
+
+    .footer-links-about {
+        display:block;
+    }
+
+
+    .footer-sm {
+        width: 150px;
+        height: 160px;  /* height between img and logo*/
+        display: block;
+        padding: 50px 350px; /* up-down left-right */
+        float:inline-end;
+    }
+
+    .footer-sm img {
+        width: 100%;
+        margin-bottom: 10px;
+        background-color: #000;
+    }
+
+    .footer-rights {
+        width: 100%;
+        font-size: 11px;
+        color: white;
+        text-align: left;
+        word-spacing: 1px;
+        letter-spacing: 5px;
+        padding: 0 580px; /*  top-bottom, left-right*/
+    }
+}
+/* ----------------------------------------------------------- */
+/* ----------- END: Adjust the size for desktop version ------ */
+/* ----------------------------------------------------------- */
+
