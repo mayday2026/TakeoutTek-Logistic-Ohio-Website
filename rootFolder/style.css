@@ -164,7 +164,7 @@ header nav ul li a {
 }
 
 body {
-    background-color: #f3f3f3;
+    background-color: #000000;
 }
 
 /* ----------------------- INDEX ----------------------- */
@@ -379,25 +379,11 @@ footer ul li a {
         letter-spacing: 2px;
         word-spacing: 8px;
     }
-    
-    .index-links div {
-        margin: 0 16px 16px 340px; /* top right bottom left */
-        width: 20%;
-        height: 150px;
-        background-color: black;
-        float: left;
-    }
-    
+    /*---------------------------------Signup and Login form styling ----------------------------------------*/
+    .index-
 
-    
-    .index-links div h3 {
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 30px;
-        font-weight: 100;
-        color: white;
-        text-align: center;
-        padding: 58px 70px; /*  top-bottom, left-right*/
-    }
+
+    /*-----------------------------------------------------------------------------------------*/
 
     /* Meet the team*/.
     .meet-team { 
