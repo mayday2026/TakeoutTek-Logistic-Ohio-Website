@@ -1,0 +1,18 @@
+
+
+CREATE TABLE users(
+	userId int(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+	userName varchar(128) NOT NULL,
+	usersEmail varchar(128) NOT NULL,
+	usersUid varchar(128) NOT NULL,
+	usersPwd varchar(128) NOT NULL
+);
+
+
+CREATE TABLE account(
+	account_id int(11) AUTO_INCREMENT NOT NULL,
+	account_address varchar(128),
+	users_id int(11) NOT NULL,
+	PRIMARY KEY (account_id),
+	FOREIGN KEY (users_id) REFERENCES users(usersId)
+);
