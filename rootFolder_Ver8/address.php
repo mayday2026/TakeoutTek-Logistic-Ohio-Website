@@ -8,7 +8,11 @@
             <div class="main-container">
                 <div class="page-width">
                     <div class="account-page-title">
-                        <h1>Hello ZHIWEI</h1>
+                        <?php
+                            if (isset($_SESSION["useruid"])) {
+                                echo"<h1>Hello " . $_SESSION['useruid'] . "</h1>";
+                            }
+                        ?>
                     </div>
                     <div class="display-content">
                         <div class="account-nav-bar">
@@ -17,7 +21,7 @@
                                     <a href="account.php"><b>Profile</b></a>
                                     <a href="#" ><b>My Orders</b></a> 
                                     <a href="address.php" ><b>Delivery address</b></a>
-                                    <a href="#" ><b>Change Password</b></a>
+                                    <a href="password.php" ><b>Change Password</b></a>
                                     <a href="logout.php" ><b>Log out</b></a>
                                 </div>
                             </div>
