@@ -1,7 +1,7 @@
 <?php
 
-include_once 'dbh.inc.php';
 
+//-------------------------------signup.php-----------------------------------------
 // Check for empty input signup
 function emptyInputSignup($username, $email, $pwd, $pwdRepeat) {
 	$result;
@@ -161,6 +161,7 @@ function loginUser($conn, $username, $pwd) {
 
 
 
+//-------------------------------address.php-----------------------------------------
 // Check for empty input address
 function emptyInputAddress($address) {
 	$result;
@@ -174,7 +175,7 @@ function emptyInputAddress($address) {
 }
 
 
-// Insert new user into database
+// Insert new address into database
 function updateAddress($conn, $address, $usersId) {
     // Check if there is an address already
     $query = mysqli_query($conn, "SELECT account_address FROM account WHERE users_Id = '$usersId';");
@@ -209,3 +210,66 @@ function updateAddress($conn, $address, $usersId) {
         }
 	}
 }
+
+
+
+//-------------------------------password.php-----------------------------------------
+
+// Check for empty input password
+function emptyInputPwd($oldPwd, $newPwd, $newPwdRepeat) {
+	$result;
+	if (empty($oldPwd) || empty($newPwd) || empty($newPwdRepeat)) {
+		$result = true;
+	}
+	else {
+		$result = false;
+	}
+	return $result;
+}
+
+
+
+// Is the current password correct?
+function checkOldPwd($oldPwd) {
+	$result;
+	$pwdInDB = "SELECT usersPwd FROM users WHERE users_Id = '$usersId';";
+	
+	if (password_verify($oldPwd, $pwdInDB)) {
+		$result = true;
+	}
+	else {
+		$result = false;
+	}
+	return $result;
+}
+
+
+// Update new password into database
+function updatePwd($conn, $newPwd, $usersId) {
+    
+    $sql = "UPDATE users SET usersPwd = ? WHERE usersId = ?;";
+	$stmt = mysqli_stmt_init($conn);
+	if (!mysqli_stmt_prepare($stmt, $sql)) {
+	 	header("location: ../password.php?error=stmtfailed");
+		exit();
+	}else{
+	    $hashedPwd = password_hash($newPwd, PASSWORD_DEFAULT);
+        mysqli_stmt_bind_param($stmt, "ss", $hashedPwd, $usersId);
+        mysqli_stmt_execute($stmt);
+        header("location: ../password.php?changePassword=success");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
