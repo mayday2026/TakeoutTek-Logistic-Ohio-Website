@@ -1,10 +1,8 @@
 
-
 CREATE TABLE users(
-	userId int(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
-	userName varchar(128) NOT NULL,
-	usersEmail varchar(128) NOT NULL,
+	usersId int(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
 	usersUid varchar(128) NOT NULL,
+	usersEmail varchar(128) NOT NULL,
 	usersPwd varchar(128) NOT NULL
 );
 
