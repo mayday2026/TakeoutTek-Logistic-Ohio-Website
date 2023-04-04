@@ -1,0 +1,1435 @@
+ /*
+ Deafult Style for all browsers
+
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+ html,
+ body,
+ div,
+ span,
+ object,
+ iframe,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ blockquote,
+ pre,
+ abbr,
+ address,
+ cite,
+ code,
+ del,
+ dfn,
+ em,
+ img,
+ ins,
+ kbd,
+ q,
+ samp,
+ small,
+ strong,
+ sub,
+ sup,
+ var,
+ b,
+ i,
+ dl,
+ dt,
+ dd,
+ ol,
+ ul,
+ li,
+ fieldset,
+ form,
+ label,
+ legend,
+ table,
+ caption,
+ tbody,
+ tfoot,
+ thead,
+ tr,
+ th,
+ td,
+ article,
+ aside,
+ canvas,
+ details,
+ figcaption,
+ figure,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ section,
+ summary,
+ time,
+ mark,
+ audio,
+ video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+ }
+
+ body {
+   line-height: 1;
+ }
+
+ article,
+ aside,
+ details,
+ figcaption,
+ figure,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ section {
+   display: block;
+ }
+
+ nav ul {
+   list-style: none;
+ }
+
+ blockquote,
+ q {
+   quotes: none;
+ }
+
+ blockquote:before,
+ blockquote:after,
+ q:before,
+ q:after {
+   content: '';
+   content: none;
+ }
+
+ a {
+   margin: 0;
+   padding: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+ }
+
+ /* change colours to suit your needs */
+ ins {
+   background-color: #ff9;
+   color: #000;
+   text-decoration: none;
+ }
+
+ /* change colours to suit your needs */
+ mark {
+   background-color: #ff9;
+   color: #000;
+   font-style: italic;
+   font-weight: bold;
+ }
+
+ del {
+   text-decoration: line-through;
+ }
+
+ abbr[title],
+ dfn[title] {
+   border-bottom: 1px dotted;
+   cursor: help;
+ }
+
+ table {
+   border-collapse: collapse;
+   border-spacing: 0;
+ }
+
+ /* change border colour to suit your needs */
+ hr {
+   display: block;
+   height: 1px;
+   border: 0;
+   border-top: 1px solid #cccccc;
+   margin: 1em 0;
+   padding: 0;
+ }
+
+ input,
+ select {
+   vertical-align: middle;
+ }
+
+
+ /* ------------- Above are default styles: -------------*/
+ /* ------------- Below are our own styles: -------------*/
+
+
+
+ /* ----------------------- HEADER ----------------------- */
+ header {
+   background-color: black;
+   width: 100%;
+   height: 260px;
+ }
+
+/* ----------------------- NAVIGATION ----------------------- */
+ html {
+   font-family: sans-serif;
+   -ms-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+ }
+
+ body {
+   margin: 0;
+ }
+
+ nav {
+   display: block;
+ }
+
+ a {
+   background-color: transparent;
+   color: white;
+ }
+
+ a:active,
+ a:hover {
+   outline: 0;
+ }
+
+ img {
+   border: 0;
+ }
+
+ .logo-image {
+   margin: 5px 25px;
+   display: block;
+ }
+
+ @font-face {
+   font-family: 'webflow-icons';
+   src: url('data:application/x-font-ttf;charset=utf-8;base64,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') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+ }
+
+ * {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+ }
+
+ html {
+   height: 100%;
+ }
+
+ body {
+   margin: 0;
+   min-height: 100%;
+   background-color: #fff;
+   font-family: Arial, sans-serif;
+   font-size: 14px;
+   line-height: 20px;
+ }
+
+ img {
+   max-width: 100%;
+   vertical-align: middle;
+   display: inline-block;
+ }
+
+ .w-inblock {
+   max-width: 100%;
+   display: inline-block;
+ }
+
+ .logo-text {
+  
+   color: white;
+   font-family: 'Bebas Neue', cursive;
+   /*Lesson 10: 外站下载的额外字体*/
+   color: white;
+   font-size: 20px;
+   word-spacing: 5px;
+   padding: 10px 0px;
+   /* up-down left-right */
+ }
+
+ @media screen and (max-width: 767px) {
+   .logo-nav {
+     padding-left: 10px;
+   }
+ }
+
+ .w-nav {
+   position: relative;
+   background: white;
+   z-index: 1000;
+ }
+
+ .w-nav:before,
+ .w-nav:after {
+   content: ' ';
+   display: table;
+   grid-column-start: 1;
+   grid-row-start: 1;
+   grid-column-end: 2;
+   grid-row-end: 2;
+ }
+
+ .w-nav:after {
+   clear: both;
+ }
+
+ .nav-logo {
+   position: relative;
+   float: left;
+   text-decoration: none;
+ }
+
+ .w-nav-link {
+   position: relative;
+   display: inline-block;
+   vertical-align: top;
+   text-decoration: none;
+   padding: 20px;
+   text-align: left;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ .w-nav-menu {
+   position: relative;
+   float: right;
+ }
+
+ .w-nav-overlay {
+   position: absolute;
+   overflow: hidden;
+   display: none;
+   top: 100%;
+   left: 0;
+   right: 0;
+   width: 100%;
+ }
+
+
+
+ @media screen and (max-width: 991px) {
+   .w-nav[data-collapse='medium'] .w-nav-menu {
+     
+   }
+
+   .w-nav[data-collapse='medium'] .w-nav-button {
+     display: block;
+   }
+ }
+
+ @media screen and (max-width: 767px) {
+   .nav-logo {
+     padding-left: 10px;
+   }
+ }
+
+ body {
+   font-family: Montserrat, sans-serif;
+   color: #1a1b1f;
+   font-size: 16px;
+   line-height: 28px;
+   font-weight: 400;
+ }
+
+ a {
+   display: block;
+   -webkit-transition: opacity 200ms ease;
+   transition: opacity 200ms ease;
+   color: white;
+   text-decoration: none;
+ }
+
+ a:hover {
+   color: #32343a;
+ }
+
+ a:active {
+   color: #43464d;
+ }
+
+ img {
+   display: block;
+ }
+
+ .button {
+   padding: 12px 25px;
+   border-radius: 0px;
+   background-color: #1a1b1f;
+   -webkit-transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
+   transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
+   color: #fff;
+   font-size: 12px;
+   line-height: 20px;
+   letter-spacing: 2px;
+   text-decoration: none;
+   text-transform: uppercase;
+ }
+
+ .button:hover {
+   background-color: #32343a;
+   color: #fff;
+ }
+
+ .button:active {
+   background-color: #43464d;
+ }
+
+ .button2 {
+   padding: 12px 25px;
+   border-radius: 0px;
+   background-color: #1a1b1f;
+   -webkit-transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
+   transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
+   color: #fff;
+   font-size: 12px;
+   line-height: 20px;
+   letter-spacing: 2px;
+   text-decoration: none;
+   text-transform: uppercase;
+ }
+ 
+ .button.login-reg-but {
+  position: relative;
+  z-index: 5;
+}
+
+ .button2:hover {
+   background-color: rgb(86, 86, 86);
+   color: #fff;
+ }
+
+ .button2:active {
+   background-color: #43464d;
+ }
+
+
+ .logo-link {
+   z-index: 1;
+ }
+
+ .logo-link:hover {
+   opacity: 0.8;
+ }
+
+ .logo-link:active {
+   opacity: 0.7;
+ }
+
+ .menu {
+   position: absolute;
+   left: 0%;
+   top: 0%;
+   right: 0%;
+   bottom: 0%;
+   z-index: 0;
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+   -webkit-justify-content: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   -webkit-box-align: center;
+   -webkit-align-items: center;
+   -ms-flex-align: center;
+   align-items: center;
+ }
+
+ .navigation-wrap {
+   position: relative;
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: justify;
+   -webkit-justify-content: space-between;
+   -ms-flex-pack: justify;
+   justify-content: space-between;
+   -webkit-box-align: center;
+   -webkit-align-items: center;
+   -ms-flex-align: center;
+   align-items: center;
+   -webkit-box-flex: 1;
+   -webkit-flex: 1;
+   -ms-flex: 1;
+   flex: 1;
+ }
+
+ .navigation {
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -ms-flexbox;
+   display: flex;
+   padding: 30px 50px;
+   -webkit-box-align: center;
+   -webkit-align-items: center;
+   -ms-flex-align: center;
+   align-items: center;
+   background-color: black;
+ }
+
+ .navigation-item {
+   /* nav's font */
+   padding-top: 9px;
+   padding-bottom: 9px;
+   opacity: 0.6;
+   font-size: 12px;
+   line-height: 20px;
+   font-weight: 600;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   color: white;
+ }
+
+ .navigation-item:hover {
+   opacity: 0.9;
+   color: white;
+ }
+
+ .navigation-item:active {
+   opacity: 0.8;
+ }
+
+
+ .navigation-items {
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+   -webkit-justify-content: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   -webkit-box-align: center;
+   -webkit-align-items: center;
+   -ms-flex-align: center;
+   align-items: center;
+   -webkit-box-flex: 0;
+   -webkit-flex: 0 0 auto;
+   -ms-flex: 0 0 auto;
+   flex: 0 0 auto;
+ }
+
+
+
+ /* ----------------------- INDEX ----------------------- */
+ body {
+   font-family: 'Poppins', sans-serif;
+   min-height: 100vh;
+   justify-content: center;
+   background-color: #f3f3f3;
+   align-items: center;
+ }
+
+
+ /* signup Card */
+ .signup-card {
+   width: 400px;
+   height: 1700px;
+   background: #f3f3f3;
+   margin: 200px 100px;
+   /* top  left */
+   border-radius: 10px;
+   position: relative;
+
+ }
+
+ /* ---------- */
+
+ /* signup Card Standard */
+ .signup-card-logo,
+ .signup-card-header,
+ .signup-card-footer {
+   text-align: center;
+ }
+
+ .signup-card a {
+   text-decoration: none;
+   color: #35339a;
+   margin-top: 4rem;
+ }
+
+ .signup-card a:hover {
+   text-decoration: underline;
+ }
+
+ .form-item span {
+   font-size: 500%;
+ }
+
+ /* ---------- */
+
+ /* signup Card Header */
+ .signup-card-header {
+   margin-bottom: 3rem;
+ }
+
+ .signup-card-header h1 {
+   /* Sign in  */
+   font-size: 80px;
+   font-weight: 600;
+   margin-left: 140px;
+   margin-bottom: 2rem;
+   width: 500px;
+ }
+
+ .signup-card-header h1+div {
+   font-size: 40px;
+   opacity: .8;
+   width: 600px;
+   text-align: center;
+   margin-left: 80px;
+   margin-top: 5rem;
+ }
+
+ /* ---------- */
+
+ /* signup Card Form */
+ .signup-card-form {
+   display: flex;
+   flex-direction: column;
+   gap: 3rem;
+ }
+
+ .signup-card-form .form-item {
+   position: relative;
+   margin-left: 100px;
+
+ }
+
+ .signup-card-form .form-item .form-item-icon {
+   position: absolute;
+   top: .82rem;
+   left: 1.4rem;
+   font-size: 1.3rem;
+   opacity: .4;
+ }
+
+ .signup-card-form .checkbox {
+   display: flex;
+   align-items: center;
+   gap: 7px;
+   margin-left: 150px;
+ }
+
+ .signup-card-form .form-item-other {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 35px;
+   /* font size of remember me */
+   margin-bottom: .5rem;
+   margin-left: 40px;
+   width: 900px;
+ }
+
+ /* ---------- */
+
+ /* signup Card Footer */
+ /* Don't have an account yet? */
+ .signup-card-footer {
+   margin-top: 6rem;
+   font-size: 40px;
+   width: 900px;
+ }
+
+ /* ---------- */
+
+ /* signup Card Form Elements */
+ .signup-card input[type="text"],
+ .signup-card input[type="password"],
+ .signup-card input[type="email"] {
+   border: none;
+   outline: none;
+   background: rgba(255, 255, 255, .3);
+   padding: 3rem 10rem;
+   font-size: 40px;
+   border-radius: 100px;
+   width: 230%;
+   /* width of input boxes */
+   transition: background .5s;
+ }
+
+ .signup-card input:focus {
+   background: white;
+ }
+
+ .signup-card input[type="checkbox"] {
+   width: 40px;
+   height: 40px;
+   accent-color: black;
+ }
+
+ .signup-card button {
+   background: black;
+   font-size: 40px;
+   color: white;
+
+   padding: 3rem;
+   margin-left: 250px;
+   width: 100%;
+
+   border-radius: 100px;
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   transition: background .5s;
+ }
+
+ .signup-card button:hover {
+   background-color: rgba(0, 0, 0, 0.85);
+   cursor: pointer;
+ }
+
+ /* ---------- */
+
+
+ /* Responsive */
+ @media (max-width: 768px) {
+
+   body {
+     padding: 2rem 0;
+   }
+
+   .signup-card {
+     width: 280px;
+     padding: 2rem;
+   }
+
+ }
+
+ /* ---------- */
+
+
+/* ----------------------- FOOTER ----------------------- */
+   footer {
+     width: calc(100%-80px);
+     padding: 10px 50px;
+     margin-top: 20px;
+     background-color: black;
+     overflow: hidden;
+     text-align: center;
+   }
+
+   footer ul {
+     display: inline-block;
+     padding-left: 0;
+     background-color: black;
+     margin: 0;
+   }
+
+   footer ul li {
+     display: block;
+     list-style: none;
+     padding: 0px;
+     margin: 0 auto;
+   }
+
+   footer ul li a {
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 15px;
+     color: white;
+     line-height: 40px;
+   }
+
+   .footer-links-account,
+   .footer-links-help,
+   .footer-links-about {
+     width: calc(100% / 3);
+     float: left;
+     box-sizing: border-box;
+     padding: 0 20px;
+   }
+
+
+   .footer-sm {
+     width: 150px;
+     height: 160px;
+     display: block;
+     padding: 50px 350px;
+     float: inline-end;
+   }
+
+   .footer-sm img {
+     width: 100%;
+     margin-bottom: 10px;
+     background-color: #000;
+   }
+
+   .footer-rights {
+     width: 100%;
+     font-size: 11px;
+     color: white;
+     text-align: center;
+     word-spacing: 1px;
+     letter-spacing: 5px;
+     margin-top: 150px;
+
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* ----------------------------------------------------------- */
+ /* ----------------------------------------------------------- */
+ /* ----------- Adjust the size for desktop version ----------- */
+ /* ----------------------------------------------------------- */
+ /* ----------------------------------------------------------- */
+ @media only screen and (min-width: 1000px) {
+
+   header {
+     height: 130px;
+   }
+
+   /* ----------------------- NAVIGATION ----------------------- */
+   html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  nav {
+    display: block;
+  }
+
+  a {
+    background-color: transparent;
+    color: white;
+  }
+
+  a:active,
+  a:hover {
+    outline: 0;
+  }
+
+  img {
+    border: 0;
+  }
+
+  .logo-image {
+    margin: 5px 75px;
+    display: block;
+  }
+
+  @font-face {
+    font-family: 'webflow-icons';
+    src: url('data:application/x-font-ttf;charset=utf-8;base64,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') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  html {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100%;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  img {
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  .w-inblock {
+    max-width: 100%;
+    display: inline-block;
+  }
+
+  .logo-text {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    /*Lesson 10: 外站下载的额外字体*/
+    color: white;
+    font-size: 30px;
+    word-spacing: 5px;
+    padding: 10px 0px;
+    /* up-down left-right */
+  }
+
+  @media screen and (max-width: 767px) {
+    .nav-logo {
+      padding-left: 10px;
+    }
+  }
+
+  .w-nav {
+    position: relative;
+    background: white;
+    z-index: 1000;
+  }
+
+  .w-nav:before,
+  .w-nav:after {
+    content: ' ';
+    display: table;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 2;
+  }
+
+  .w-nav:after {
+    clear: both;
+  }
+
+  .nav-logo {
+    position: relative;
+    float: left;
+    text-decoration: none;
+  }
+
+  .w-nav-link {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    padding: 20px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .w-nav-menu {
+    position: relative;
+    float: right;
+  }
+
+  .w-nav-overlay {
+    position: absolute;
+    overflow: hidden;
+    display: none;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+
+
+
+  @media screen and (max-width: 991px) {
+    .w-nav[data-collapse='medium'] .w-nav-menu {
+      display: none;
+    }
+
+    .w-nav[data-collapse='medium'] .w-nav-button {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .nav-logo {
+      padding-left: 10px;
+    }
+  }
+
+  body {
+    font-family: Montserrat, sans-serif;
+    color: #1a1b1f;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+
+  a {
+    display: block;
+    -webkit-transition: opacity 200ms ease;
+    transition: opacity 200ms ease;
+    color: white;
+    text-decoration: none;
+
+  }
+
+  a:hover {
+    color: #32343a;
+  }
+
+  a:active {
+    color: #43464d;
+  }
+
+  img {
+    display: block;
+  }
+
+  .button {
+    padding: 12px 25px;
+    border-radius: 0px;
+    background-color: white;
+    -webkit-transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
+    transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
+    color: black;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .button:hover {
+    background-color: #4c4c4c;
+    color: #fff;
+  }
+
+  .button:active {
+    background-color: #43464d;
+  }
+
+  .button2 {
+    padding: 12px 25px;
+    border-radius: 0px;
+    background-color: #1a1b1f;
+    -webkit-transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
+    transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .button2:hover {
+    background-color: rgb(86, 86, 86);
+    color: #fff;
+  }
+
+  .button2:active {
+    background-color: #43464d;
+  }
+
+  .button.login-reg-but {
+    position: relative;
+    z-index: 5;
+  }
+
+  .logo-link {
+    z-index: 1;
+  }
+
+  .logo-link:hover {
+    opacity: 0.8;
+  }
+
+  .logo-link:active {
+    opacity: 0.7;
+  }
+
+  .menu {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .navigation-wrap {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  .navigation {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 30px 50px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: black;
+  }
+
+  .navigation-item {
+    /* nav's font */
+    padding-top: 9px;
+    padding-bottom: 9px;
+    opacity: 0.6;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  .navigation-item:hover {
+    opacity: 0.9;
+  }
+
+  .navigation-item:active {
+    opacity: 0.8;
+  }
+
+
+  .navigation-items {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+
+   /* ----------------------- INDEX ----------------------- */
+   body {
+     font-family: 'Poppins', sans-serif;
+     min-height: 100vh;
+     justify-content: center;
+     background-color: #f3f3f3;
+     align-items: center;
+   }
+
+
+   /* signup Card */
+   .signup-card {
+     width: 450px;
+     height: 750px;
+     background: #f3f3f3;
+     margin: 100px 480px;
+     /* top  left */
+     border-radius: 10px;
+     position: relative;
+
+   }
+
+   .form-item span {
+     font-size: 150%;
+   }
+
+
+   /* ---------- */
+
+
+   /* signup Card Standard */
+   .signup-card-logo,
+   .signup-card-header,
+   .signup-card-footer {
+     text-align: center;
+   }
+
+   .signup-card a {
+     text-decoration: none;
+     color: #35339a;
+     margin-top: 0.5rem;
+   }
+
+   .signup-card a:hover {
+     text-decoration: underline;
+   }
+
+   /* ---------- */
+
+   /* signup Card Header */
+   .signup-card-header {
+     margin-bottom: 2rem;
+   }
+
+   .signup-card-header h1 {
+     /* Sign in  */
+     font-size: 2rem;
+     font-weight: 600;
+     margin-bottom: 1rem;
+     margin-left: 12rem;
+   }
+
+   .signup-card-header h1+div {
+     font-size: calc(1rem * .8);
+     opacity: .8;
+     width: 600px;
+     text-align: center;
+     margin-left: 9rem;
+     margin-top: 1rem;
+   }
+  
+
+   /* ---------- */
+
+   /* signup Card Form */
+   .signup-card-form {
+     display: flex;
+     flex-direction: column;
+     gap: 2rem;
+
+
+   }
+
+   .signup-card-form .form-item {
+     position: relative;
+     margin-left: 200px;
+     width: 100%;
+   }
+
+   .signup-card-form .form-item .form-item-icon {
+     position: absolute;
+     top: .82rem;
+     left: 1.4rem;
+     font-size: 1.3rem;
+     opacity: .4;
+   }
+
+   .signup-card-form .checkbox {
+     display: flex;
+     align-items: center;
+     gap: 7px;
+   }
+
+   .signup-card-form .form-item-other {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     font-size: calc(1rem * .8);
+     margin-bottom: .5rem;
+     margin-left: 200px;
+     width: 505px;
+   }
+
+   /* ---------- */
+
+   /* signup Card Footer */
+   .signup-card-footer {
+     margin-top: 1.5rem;
+     font-size: calc(1rem * .8);
+   }
+
+   /* ---------- */
+
+   /* signup Card Form Elements */
+   .signup-card input[type="text"],
+   .signup-card input[type="password"],
+   .signup-card input[type="email"] {
+     border: none;
+     outline: none;
+     background: rgba(255, 255, 255, .3);
+     padding: 1rem 1.5rem;
+     font-size: 1rem;
+
+     border-radius: 100px;
+     width: 110%;
+     /* width of input boxes */
+     transition: background .5s;
+
+   }
+
+   .signup-card input:focus {
+     background: white;
+   }
+
+   .signup-card input[type="checkbox"] {
+     width: 16px;
+     height: 16px;
+     accent-color: black;
+   }
+
+   .signup-card button {
+     background: black;
+     font-size: 15px;
+     color: white;
+
+     padding: 1rem;
+     margin-left: 200px;
+     width: 112%;
+
+     border-radius: 100px;
+     text-align: center;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     transition: background .5s;
+   }
+
+   .signup-card button:hover {
+     background-color: rgba(0, 0, 0, 0.85);
+     cursor: pointer;
+   }
+
+   /* ---------- */
+
+
+   /* Responsive */
+   @media (max-width: 768px) {
+
+     body {
+       padding: 2rem 0;
+     }
+
+     .signup-card {
+       width: 280px;
+       padding: 2rem;
+     }
+
+   }
+
+   /* ---------- */
+/* ----------------------- FOOTER ----------------------- */
+   footer {
+     width: calc(100%-80px);
+     padding: 10px 50px;
+     margin-top: 20px;
+     background-color: black;
+     overflow: hidden;
+     text-align: center;
+   }
+
+   footer ul {
+     display: inline-block;
+     padding-left: 0;
+     background-color: black;
+     margin: 0;
+   }
+
+   footer ul li {
+     display: block;
+     list-style: none;
+     padding: 0px;
+     margin: 0 auto;
+   }
+
+   footer ul li a {
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 15px;
+     color: white;
+     line-height: 40px;
+   }
+
+   .footer-links-account,
+   .footer-links-help,
+   .footer-links-about {
+     width: calc(100% / 3);
+     float: left;
+     box-sizing: border-box;
+     padding: 0 20px;
+   }
+
+
+   .footer-sm {
+     width: 150px;
+     height: 160px;
+     display: block;
+     padding: 50px 350px;
+     float: inline-end;
+   }
+
+   .footer-sm img {
+     width: 100%;
+     margin-bottom: 10px;
+     background-color: #000;
+   }
+
+   .footer-rights {
+     width: 100%;
+     font-size: 11px;
+     color: white;
+     text-align: center;
+     word-spacing: 1px;
+     letter-spacing: 5px;
+     margin-top: 150px;
+
+   }
+ }
+
+ /* ----------------------------------------------------------- */
+ /* ----------- END: Adjust the size for desktop version ------ */
+ /* ----------------------------------------------------------- */
